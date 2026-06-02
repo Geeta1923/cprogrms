@@ -111,3 +111,19 @@ int main() {
 
     return 0;
 }
+
+
+#include <stdio.h>
+#include <math.h>
+#include <stdint.h>
+
+int main()
+{
+    for(int i=0;i<64;i++)
+    {
+        uint32_t k =
+            (uint32_t)(fabs(sin(i+1)) * 4294967296.0);
+
+        printf("0x%08x\n", k);
+    }
+}
